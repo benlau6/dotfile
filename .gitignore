@@ -1,0 +1,13 @@
+azure-datalake-store/
+fish/
+gcloud/
+gh/
+lazydocker/
+lazysql/
+lnav/
+matplotlib/
+mlflow/
+nvim.bak/
+opencode/
+uv/
+wslu/

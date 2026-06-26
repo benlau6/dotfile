@@ -1,0 +1,13 @@
+git:
+  pagers:
+    - colorArg: always
+      pager: delta --dark --paging=never
+customCommands:
+  - key: "T"
+    command: "git fetch origin --prune --prune-tags"
+    context: "tags"
+    description: "Fetch and prune deleted remote tags"
+    loadingText: "Pruning deleted tags..."
+keybinding:
+  universal:
+    refresh: =
