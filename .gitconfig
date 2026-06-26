@@ -1,0 +1,30 @@
+[user]
+	name = benlau
+[core]
+	autocrlf = false
+	quotepath = false
+	pager = delta
+[i18n]
+	commitencoding = utf-8
+	logoutputencoding = utf-8
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[pull]
+	rebase = true
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	navigate = true  # use n and N to move between diff sections
+	dark = true      # or light = true, or omit for auto-detection
+	side-by-side = true
+[merge]
+ conflictStyle = zdiff3
+    tool = nvim
+[mergetool "nvim"]
+    cmd = nvim -c "DiffviewOpen"
+[mergetool]
+    prompt = false
